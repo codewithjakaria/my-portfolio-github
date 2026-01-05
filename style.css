@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #fff8f3;
+  padding-top: 50px;
+  /* ব্যানার ইমেজের নিচের অংশ যেন ব্যাকগ্রাউন্ডের সাথে মিশে থাকে */
+  overflow: hidden;
+  background: url(images/developer.png), url(images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+/* --- Navigation Styles --- */
+nav {
+  /* উইডথ 71% এর বদলে 80% বা 85% দিলে বড় স্ক্রিনে দেখতে ভালো লাগবে */
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  /* space-between এর কারণে আইটেমগুলো দুই প্রান্তে থাকে */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.color-orange {
+  color: #fd6e0a;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 51px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #474747;
+}
+
+/* --- Button Style --- */
+.btn {
+  background-color: #fd6e0a;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- Banner Styles --- */
+#banner {
+  /* মার্জিনগুলো ফিক্সড (230px) না দিয়ে শতাংশ বা অটো ব্যবহার করা ভালো */
+  max-width: 1140px;
+  width: 85%;
+  margin: 47px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner .banner-content {
+  max-width: 585px;
+}
+
+#banner .banner-content h2 {
+  color: #474747;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#banner .banner-content h1 {
+  font-size: 85px;
+  color: #181818;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#banner .banner-content p {
+  font-size: 18px;
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* ডাউনলোড বাটন দুটির মাঝে গ্যাপের জন্য */
+#banner .banner-content div .btn {
+  margin-right: 10px;
+}
+
+#banner .banner-image img {
+  /* ইমেজ যেন রেসপনসিভ হয় */
+  width: 100%;
+  max-width: 585px;
+  display: block;
+}
